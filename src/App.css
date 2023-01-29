@@ -5,9 +5,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
+
 .ethCoins {
   position: fixed;
   flex-basis: 1/2;
   z-index: 2;
   top: -1500px;
 }
+
+
