@@ -10,6 +10,7 @@ import EthersImage from "./EthersImage";
 import SolidityImage from "./SolidityImage";
 import ReactImage from "./ReactImage";
 import HardhatImage from "./HardhatImage";
+import SqlImage from "./SqlImage";
 
 function MarqueeComponent() {
   return (
@@ -29,6 +30,7 @@ function MarqueeComponent() {
       <SolidityImage />
       <ReactImage />
       <HardhatImage />
+      <SqlImage />
     </Marquee>
   );
 }
