@@ -26,7 +26,7 @@ function TimeVaultProjectInfo() {
                     hardhat to develop my smart contract and write my deploy
                     scripts while using NextJS to create a fully responsive
                     frontend. Additionally, I used Moralis for contract
-                    interaction and wallect management. This dapp is deployed on
+                    interaction and wallet management. This dapp is deployed on
                     IPFS you can get to the live deployment below.
                   </p>
                 </div>
@@ -36,6 +36,19 @@ function TimeVaultProjectInfo() {
                     Solidity, Next.js, HardHat, Tailwind CSS, Ethers.js, React
                     Moralis
                   </h1>
+                </div>
+                <div className="flex flex-col basis-1/4 lg:mb-8 mb-4">
+                  <h1 className="lg:text-4xl text-2xl font-bold">
+                    Topics Covered:
+                  </h1>
+                  <div className="lg:text-xl text-md pl-8">
+                    <ol className="list-disc">
+                      <li>Solidity Programming</li>
+                      <li>Smart Contract Interaction with React Moralis</li>
+                      <li>Async JavaScript Programming</li>
+                      <li>Unit Testing with Chai</li>
+                    </ol>
+                  </div>
                 </div>
                 <div className="flex flex-row basis-1/4 place-self-center">
                   <a
@@ -69,11 +82,11 @@ function TimeVaultProjectInfo() {
                 deposit is made using the timestamp of the block this
                 transaction is included on. A user can increase the time their
                 ETH is locked away for using the increaseTime() function.
-                Mappings and fallback/recieve functions are also used to store
-                data on chain and accept payments, respectifully. This contract
-                DOES NOT protect against reentrency attacks and doesn't use call
-                to transfer value which is something I improved upon in the
-                JToken project.
+                Mappings and fallback/receive functions are also used to store
+                data on the chain and accept payments, respectively. This
+                contract DOES NOT protect against reentrancy attacks and doesn't
+                use a call to transfer value which is something I improved upon
+                in the JToken project.
               </h1>
               <img src={scImg} alt="SC" className="lg:pb-10 pb-5" />
             </motion.div>
@@ -112,7 +125,7 @@ function TimeVaultProjectInfo() {
                 library called React Moralis which comes with hooks that can be
                 used to query the smart contract. Below you can see four calls
                 to different contract functions using the useWeb3Contract hook
-                from Moralis. Beyond this image I would call these functions
+                from Moralis. Beyond this image, I would call these functions
                 with an async function tied to an onClick event.
               </h1>
               <img src={interactionImg} alt="CI" className="lg:pb-10 pb-5" />

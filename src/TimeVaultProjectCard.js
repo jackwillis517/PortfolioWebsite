@@ -12,7 +12,7 @@ function TimeVaultProjectCard() {
         <h1 className="mb-4 font-bold text-lg">Time Vault</h1>
         <h1>
           A decentralized Ethereum storage application, designed to store users
-          ETH in case of emergency
+          ETH in case of emergency.
         </h1>
       </div>
     </div>

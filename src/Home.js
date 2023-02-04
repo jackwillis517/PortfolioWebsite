@@ -1,17 +1,19 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import { Squash as Hamburger } from "hamburger-react";
+import { Link } from "react-scroll";
+import resume from "./Documents/resume.pdf";
 import headshot from "./HeadshotNoBackground3.png";
 import codeImage from "./CodeImage.png";
 import MarqueeComponent from "./Marquee";
 import downarrow from "./down-arrow.png";
+import downloading from "./downloading.png";
 import TimeVaultProjectCard from "./TimeVaultProjectCard";
 import ChessGameProjectCard from "./ChessGameProjectCard";
-import HungryProjectCard from "./HungryProjectCard";
 import JTokenProjectCard from "./JTokenProjectCard";
-import downloading from "./downloading.png";
-import { Squash as Hamburger } from "hamburger-react";
-import { Link } from "react-scroll";
-import { motion } from "framer-motion";
+import DexSimProjectCard from "./DexSimProjectCard";
+import ResearchProjectCard from "./ResearchProjectCard";
+import HRDatabaseProjectCard from "./HRDatabaseProjectCard";
 
 function Home() {
   const [isOpen, setOpen] = useState(false);
@@ -46,9 +48,13 @@ function Home() {
                   Portfolio
                 </Link>
               </button>
-              <button className="basis-1/3 bg-[#e85b49] rounded py-2 hover:-translate-y-1 hover:scale-110 hover:bg-[#d63e2a] ease-in-out duration-300 mb-1 ml-7 shadow-sm shadow-black">
+              <a
+                href={resume}
+                download="Resume.pdf"
+                className="basis-1/3 bg-[#e85b49] text-center rounded py-2 hover:-translate-y-1 hover:scale-110 hover:bg-[#d63e2a] ease-in-out duration-300 mb-1 ml-7 shadow-sm shadow-black"
+              >
                 Resume
-              </button>
+              </a>
             </div>
             <div className="basis-1/2 lg:hidden flex place-items-end justify-end pr-12">
               <Hamburger
@@ -76,7 +82,9 @@ function Home() {
                     Portfolio
                   </Link>
                 </li>
-                <li className="p-4">Resume</li>
+                <a href={resume} download="Resume.pdf">
+                  <li className="p-4">Resume</li>
+                </a>
               </ul>
             </div>
           </div>
@@ -134,10 +142,14 @@ function Home() {
                 in Computer Science specializing in Enterprise and Web
                 Computing.
               </h4>
-              <button className="bg-[#e85b49] flex items-center space-x-2 rounded hover:bg-[#d63e2a] px-3 py-1 hover:scale-95 ease-in-out duration-300 text-lg lg:mb-8 mb-5 shadow-sm shadow-grey-300">
+              <a
+                href={resume}
+                download="Resume.pdf"
+                className="bg-[#e85b49] flex w-60 items-center space-x-2 rounded hover:bg-[#d63e2a] px-4 py-1 hover:scale-95 ease-in-out duration-300 text-lg lg:mb-8 mb-5 shadow-sm shadow-grey-300"
+              >
                 <span>Download Resume</span>
                 <img src={downloading} className="scale-60" />
-              </button>
+              </a>
               <h4 className="md:text-lg mb-3">
                 LinkedIn | www.linkedin.com/in/jack-willis-3b0b18127
               </h4>
@@ -281,11 +293,21 @@ function Home() {
           <a href="/jtoken">
             <JTokenProjectCard />
           </a>
+          <a>
+            <DexSimProjectCard />
+          </a>
           <a href="/timevault">
             <TimeVaultProjectCard />
           </a>
-          <ChessGameProjectCard />
-          <HungryProjectCard />
+          <a href="/hrdatabase">
+            <HRDatabaseProjectCard />
+          </a>
+          <a href="/research">
+            <ResearchProjectCard />
+          </a>
+          <a href="/graphics">
+            <ChessGameProjectCard />
+          </a>
         </div>
       </div>
     </div>

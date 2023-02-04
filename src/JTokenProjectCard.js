@@ -12,7 +12,7 @@ function JTokenProjectCard() {
         <h1 className="mb-4 font-bold text-lg">JToken</h1>
         <h1>
           A decentralized ERC20 token exchange built on ethereum using
-          OpenZeppelin, HardHat and ethers.js
+          OpenZeppelin, HardHat and ethers.js.
         </h1>
       </div>
     </div>

@@ -11,8 +11,8 @@ function ChessGameProjectCard() {
       <div className="basis-1/6 p-8">
         <h1 className="mb-4 font-bold text-lg">Chess Game</h1>
         <h1>
-          A project focused around the game of chess using C++ and OpenGl that
-          explored various topics in computer graphics
+          A project focused around the game of chess using C++ and OpenGl,
+          exploring topics in computer graphics.
         </h1>
       </div>
     </div>
