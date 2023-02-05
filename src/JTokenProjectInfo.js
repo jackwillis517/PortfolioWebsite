@@ -35,9 +35,8 @@ function TimeVaultProjectInfo() {
                     project itself. I wanted to learn more about contract
                     interaction using Ethers.js so I elected to do it manually
                     which was more time-consuming but helped me understand what
-                    was really going on behind the scenes. This dapp will be
-                    deployed on IPFS soon, for now, you can get to the repo for
-                    the code below.
+                    was really going on behind the scenes. This dapp is now
+                    deployed on IPFS, check out the deployment below.
                   </p>
                 </div>
                 <div className="flex flex-row basis-1/4 lg:mb-8 mb-4">
@@ -68,7 +67,7 @@ function TimeVaultProjectInfo() {
                     Github
                   </a>
                   <a
-                    href="#"
+                    href="https://tight-scene-4021.on.fleek.co/"
                     className="bg-[#e85b49] lg:mr-0 mr-5 rounded py-3 px-5 hover:-translate-y-1 hover:scale-110 hover:bg-[#d63e2a] ease-in-out duration-300 mb-1 ml-7 shadow-sm shadow-black"
                   >
                     Deployment

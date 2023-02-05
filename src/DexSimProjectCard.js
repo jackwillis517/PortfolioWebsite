@@ -12,7 +12,7 @@ function DexSimProjectCard() {
         <h1 className="mb-4 font-bold text-lg">Dex Sim (Coming Soon)</h1>
         <h1>
           A dapp intended to teach people the inner workings of a CPMM mechanism
-          in a DEXes like Uniswap.
+          in DEXes like Uniswap.
         </h1>
       </div>
     </div>
