@@ -11,9 +11,9 @@ import downloading from "./downloading.png";
 import TimeVaultProjectCard from "./TimeVaultProjectCard";
 import ChessGameProjectCard from "./ChessGameProjectCard";
 import JTokenProjectCard from "./JTokenProjectCard";
-import DexSimProjectCard from "./DexSimProjectCard";
 import ResearchProjectCard from "./ResearchProjectCard";
 import HRDatabaseProjectCard from "./HRDatabaseProjectCard";
+import BBProjectCard from "./BBProjectCard";
 
 function Home() {
   const [isOpen, setOpen] = useState(false);
@@ -259,20 +259,25 @@ function Home() {
               </h1>
             </div>
             <div className="flex flex-col basis-1/2 p-16" id="portfolio">
-              <h1 className="basis-1/2 lg:text-5xl text-3xl font-bold text-center">
+              <h1 className="basis-1/3 lg:text-5xl text-3xl font-bold text-center">
                 Portfolio
+              </h1>
+              <h1 className="basis-1/2 lg:text-xl mt-2 text-[#e85b49] text-md text-center">
+                Click the Tiles for More Info
               </h1>
               <img
                 src={downarrow}
                 alt="down"
-                className="basis-1/2 animate-bounce lg:h-16 lg:w-16 lg:mb-0 mb-10 h-12 w-12 mt-10 place-self-center"
+                className="basis-1/3 animate-bounce lg:h-16 lg:w-16 lg:mb-0 mb-10 h-12 w-12 mt-10 place-self-center"
               />
             </div>
           </div>
           <div className="basis-1/2 p-16">
             <ul className="list-disc">
-              <li className="lg:my-7 my-5 lg:text-3xl text-lg">Learn Rust</li>
-              <li className="lg:my-7 my-5 lg:text-3xl text-lg">
+              <li className="lg:my-7 my-5 lg:text-3xl text-lg underline underline-offset-4">
+                Learn Rust
+              </li>
+              <li className="lg:my-7 my-5 lg:text-3xl text-lg underline underline-offset-4">
                 Create a Dapp on Solana using Rust
               </li>
               <li className="lg:my-7 my-5 lg:text-3xl text-lg">
@@ -290,11 +295,11 @@ function Home() {
       </div>
       <div className="flex m-auto justify-center bg-zinc-900 text-white">
         <div className="grid p-16 lg:mt-10 mt-5 lg:max-w-standard font-hind grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-12 auto-rows-max ">
+          <a href="/blockchainblackjack">
+            <BBProjectCard />
+          </a>
           <a href="/jtoken">
             <JTokenProjectCard />
-          </a>
-          <a>
-            <DexSimProjectCard />
           </a>
           <a href="/timevault">
             <TimeVaultProjectCard />

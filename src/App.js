@@ -5,6 +5,7 @@ import JTokenProjectInfo from "./JTokenProjectInfo";
 import GraphicsProjectInfo from "./GraphicsProjectInfo";
 import HRDatabaseProjectInfo from "./HRDatabaseProjectInfo";
 import ResearchProjectInfo from "./ResearchProjectInfo";
+import BBProjectInfo from "./BBProjectInfo";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/graphics" element={<GraphicsProjectInfo />} />
       <Route path="/hrdatabase" element={<HRDatabaseProjectInfo />} />
       <Route path="/research" element={<ResearchProjectInfo />} />
+      <Route path="/blockchainblackjack" element={<BBProjectInfo />} />
     </Routes>
   );
 }
